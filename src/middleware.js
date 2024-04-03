@@ -15,7 +15,7 @@ export const onRequest = defineMiddleware((context, next) => {
 
 	// Return the element at the random index
 	let redirectURL = false;
-	const source = context.url.searchParams.get("source");
+	const source = context.url.searchParams.get("utm_source");
 
   if(source == "facebook"){
 		return Response.redirect(
