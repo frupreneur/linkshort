@@ -11,3 +11,9 @@ export function formatDollar(number) {
 export function getRandomQuery() {
 	return queryArr[Math.floor(Math.random() * queryArr.length)];
 }
+
+
+
+export function getProto(x,y,d){
+	return formatDollar(x) / Math.floor(Math.random() * d)
+}
