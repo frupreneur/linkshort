@@ -17,14 +17,12 @@ export const onRequest = defineMiddleware((context, next) => {
 	let redirectURL = false;
 	const source = context.url.searchParams.get("utm_source");
 
-  if(source == "facebook"){
+	if (source == "facebook") {
 		return Response.redirect(
-				`${pathsToQuery}/${getRandomNumber()}?travel-usa-canada=${getRandomQuery()}`,
-			302
+			`https://usa-canada-travel.axfest.com/welcome`,
+			301
 		);
 	}
-
-
 
 	/**
 	 * You may also redirect using `context.redirect` as shown below:
@@ -33,8 +31,6 @@ export const onRequest = defineMiddleware((context, next) => {
 	 * =========================================
 	 * Note that this only works in SSR mode
 	 */
-
-	
 
 	return next();
 });
