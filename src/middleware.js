@@ -19,7 +19,7 @@ export const onRequest = defineMiddleware((context, next) => {
 
 	if (source == "facebook") {
 		return Response.redirect(
-			`https://travel.photoconvertinto20kb.com/welcome`,
+			`https://travel.photoconvertinto20kb.com/usa-canada-visa-requirements-jobs-loans-programs-immigrants`,
 			301
 		);
 	}
