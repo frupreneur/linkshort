@@ -19,7 +19,7 @@ export const onRequest = defineMiddleware((context, next) => {
 
 	if (source == "facebook") {
 		return Response.redirect(
-			`https://usa-canada-travel.axfest.com/welcome`,
+			`https://travel.photoconvertinto20kb.com/welcome`,
 			301
 		);
 	}
