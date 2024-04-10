@@ -29,6 +29,15 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+	if (source == "timebucks1") {
+		return Response.redirect(`https://axfest.com/`, 301);
+	}
+	if (source == "timebucks2") {
+		return Response.redirect(`https://axfest.com/`, 301);
+	}
+	if (source == "timebucks3") {
+		return Response.redirect(`https://axfest.com/`, 301);
+	}
 
 	/**
 	 * You may also redirect using `context.redirect` as shown below:
