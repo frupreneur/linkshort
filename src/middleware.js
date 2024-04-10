@@ -25,7 +25,7 @@ export const onRequest = defineMiddleware((context, next) => {
 	}
 	if (source == "canada-travel-guide") {
 		return Response.redirect(
-			`https://usa-canada-travel.englishcompositions.com/canada-visitor-visa-requirements/`,
+			`https://travel.photoconvertinto20kb.com/welcome`,
 			301
 		);
 	}
