@@ -30,13 +30,13 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "timebucks1") {
-		return Response.redirect(`https://axfest.com/`, 301);
+		return Response.redirect(`https://edu.englishcompositions.com/`, 301);
 	}
 	if (source == "timebucks2") {
-		return Response.redirect(`https://axfest.com/`, 301);
+		return Response.redirect(`https://edu.englishcompositions.com/`, 301);
 	}
 	if (source == "timebucks3") {
-		return Response.redirect(`https://axfest.com/`, 301);
+		return Response.redirect(`https://edu.englishcompositions.com/`, 301);
 	}
 
 	/**
