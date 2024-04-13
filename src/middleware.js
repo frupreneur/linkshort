@@ -15,7 +15,6 @@ export const onRequest = defineMiddleware((context, next) => {
 
 	// Return the element at the random index
 
-	console.log(context.request);
 	let redirectURL = false;
 	const source = context.url.searchParams.get("utm_source");
 
@@ -28,6 +27,12 @@ export const onRequest = defineMiddleware((context, next) => {
 	if (source == "canada-travel-guide") {
 		return Response.redirect(
 			`https://travel.photoconvertinto20kb.com/welcome`,
+			301
+		);
+	}
+	if (source == "timebucks") {
+		return Response.redirect(
+			`https://edu.englishcompositions.com`,
 			301
 		);
 	}
