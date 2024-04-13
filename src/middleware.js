@@ -32,7 +32,7 @@ export const onRequest = defineMiddleware((context, next) => {
 	}
 	if (source == "timebucks") {
 		return Response.redirect(
-			`https://edu.englishcompositions.com`,
+			`https://edu.englishcompositions.com/welcome/`,
 			301
 		);
 	}
