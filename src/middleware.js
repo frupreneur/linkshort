@@ -20,13 +20,13 @@ export const onRequest = defineMiddleware((context, next) => {
 
 	if (source == "facebook") {
 		return Response.redirect(
-			`https://careers.englishcompositions.com/canada-travel-guide/`,
+			`https://travel.photoconvertinto20kb.com/usa-canada-visa-requirements-jobs-loans-programs-immigrants`,
 			301
 		);
 	}
 	if (source == "canada-travel-guide") {
 		return Response.redirect(
-			`https://travel.photoconvertinto20kb.com/welcome`,
+			`https://careers.englishcompositions.com/canada-travel-guide/`,
 			301
 		);
 	}
