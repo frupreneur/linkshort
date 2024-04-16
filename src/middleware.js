@@ -26,7 +26,7 @@ export const onRequest = defineMiddleware((context, next) => {
 	}
 	if (source == "canada-travel-guide") {
 		return Response.redirect(
-			`https://careers.englishcompositions.com/canada-travel-guide/`,
+			`https://edu.englishcompositions.com/welcome`,
 			301
 		);
 	}
