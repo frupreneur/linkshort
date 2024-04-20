@@ -25,10 +25,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "canada-travel-guide") {
-		return Response.redirect(
-			`https://edu.englishcompositions.com/welcome`,
-			301
-		);
+		return Response.redirect(`https://careers.thewordmixer.com/home/`, 301);
 	}
 	if (source == "timebucks") {
 		return Response.redirect(
