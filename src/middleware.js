@@ -30,6 +30,14 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+
+	if (source == "canada-guide") {
+		return Response.redirect(
+			`https://careers.englishcompositions.com/cracking-the-canadian-code-essential-tips-for-successful-migration/`,
+			301
+		);
+	}
+
 	if (source == "timebucks") {
 		return Response.redirect(
 			`https://edu.englishcompositions.com/welcome/`,
