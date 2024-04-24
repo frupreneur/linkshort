@@ -15,12 +15,17 @@ export const onRequest = defineMiddleware((context, next) => {
 
 	// Return the element at the random index
 
-	let redirectURL = false;
 	const source = context.url.searchParams.get("utm_source");
 
 	if (source == "facebook") {
 		return Response.redirect(
 			`https://travel.photoconvertinto20kb.com/usa-canada-visa-requirements-jobs-loans-programs-immigrants`,
+			301
+		);
+	}
+	if (source == "breast-cancer-guide") {
+		return Response.redirect(
+			`https://englishcompositions.com/exploring-early-signs-and-indicators-of-breast-cancer/`,
 			301
 		);
 	}
