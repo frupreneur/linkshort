@@ -35,6 +35,12 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+	if (source == "canada-relocation-guide") {
+		return Response.redirect(
+			`https://englishcompositions.com/legally-relocate-to-canada-and-get-a-work-permit-to-apply-for-jobs/`,
+			301
+		);
+	}
 
 	if (source == "canada-guide") {
 		return Response.redirect(
