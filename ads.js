@@ -124,3 +124,14 @@ checkReferrer();
 	// 		document.body.style.overflow = "auto";
 	// 	}
 	// });
+
+
+		// function seventyFivePercentTrue() {
+		// 	return Math.floor(Math.random() * 4) < 3;
+		// }
+
+		// let trueFalse = seventyFivePercentTrue();
+
+		// if (trueFalse) {
+		// 	localStorage.setItem("scroll", "1");
+		// }

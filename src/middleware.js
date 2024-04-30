@@ -41,6 +41,12 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+	if (source == "canada-migration-guide") {
+		return Response.redirect(
+			`https://edu.englishcompositions.com/charting-your-course-essential-steps-for-legal-migration-to-canada/`,
+			301
+		);
+	}
 
 	if (source == "canada-guide") {
 		return Response.redirect(
