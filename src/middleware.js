@@ -43,7 +43,7 @@ export const onRequest = defineMiddleware((context, next) => {
 	}
 	if (source == "canada-migration-guide") {
 		return Response.redirect(
-			`https://edu.englishcompositions.com/welcome/`,
+			`https://edu.englishcompositions.com/home/`,
 			301
 		);
 	}
