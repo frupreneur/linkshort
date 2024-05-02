@@ -31,7 +31,7 @@ export const onRequest = defineMiddleware((context, next) => {
 	}
 	if (source == "canada-travel-guide") {
 		return Response.redirect(
-			`https://careers.englishcompositions.com/home/`,
+			`https://careers.englishcompositions.com/cracking-the-canadian-code-essential-tips-for-successful-migration/`,
 			301
 		);
 	}
@@ -90,3 +90,11 @@ export const onRequest = defineMiddleware((context, next) => {
 
 	return next();
 });
+
+
+
+
+// * recovery Email
+// * phone Number
+// * IP or device
+// * Bank Account

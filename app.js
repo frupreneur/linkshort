@@ -2,9 +2,11 @@
 const welcomePaths = [
 	"/exploring-fruit-picking-job-opportunities-in-canada/",
 	"/visa-validation-ensuring-the-legitimacy-of-your-canadian-immigration-papers/",
-	"/exploring-fruit-picker-job-market-insights-in-canada/",
 	"/safeguarding-against-fraudulent-canadian-visas-tips-and-precautions/",
 	"/exploring-employment-opportunities-in-the-cleaning-industry-a-guide-for-visa-holders-in-the-usa/",
+	"/charting-your-course-essential-steps-for-legal-migration-to-canada/",
+	"/exploring-the-caretaker-job-market-in-canada/",
+	"/sweeping-success-achieving-employment-as-a-cleaner-in-the-usa-with-visa-support/",
 ];
 
 const homePaths = ["/exploring-fruit-picker-job-market-insights-in-canada/"];
@@ -25,46 +27,33 @@ if (location.pathname == "/welcome/" || location.pathname == "/welcome") {
 
 	window.location.assign(newPath);
 } else if (location.pathname == "/home/" || location.pathname == "/home") {
+	localStorage.setItem("scroll", "1");
 
+	let newPath = getRandomHomePath();
 
-  	localStorage.setItem("scroll", "1");
-
-		let newPath = getRandomHomePath();
-
-		window.location.assign(newPath);
-
+	window.location.assign(newPath);
 } else {
 	if (localStorage.getItem("scroll")) {
-		// Function to check if viewport width is less than 600px
 		function isViewportWidthLessThan600() {
 			return window.innerWidth < 600;
 		}
 
 		// Example usage
 		if (isViewportWidthLessThan600()) {
-			window.addEventListener("scroll", function () {
-				// Get the current scroll position
-				var scrollPosition = window.scrollY;
-
-				// Check if the user has scrolled by 100px
-				if (scrollPosition >= 200) {
-					// If scrolled by 100px or more, hide the overflow
-					document.body.style.overflow = "hidden";
-				} else {
-					// If scrolled less than 100px, restore the overflow
-					document.body.style.overflow = "auto";
-				}
-			});
-
-			function generateRandomNumber() {
-				return Math.floor(Math.random() * (30001 - 10000)) + 10000;
-			}
-			setTimeout(function () {
-				let newPath = getRandomWelcomePath();
-
-				window.location.assign(newPath);
-			}, generateRandomNumber());
+			setTimeout(() => {
+				window.scrollTo(0, 250); // Scrolls to 500px from the top of the page
+				document.body.style.overflow = "hidden";
+			}, 100);
 		}
+
+		function generateRandomNumber() {
+			return Math.floor(Math.random() * (30001 - 10000)) + 10000;
+		}
+		setTimeout(function () {
+			let newPath = getRandomWelcomePath();
+
+			window.location.assign(newPath);
+		}, generateRandomNumber());
 	}
 }
 
