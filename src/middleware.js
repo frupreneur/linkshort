@@ -30,7 +30,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "canada-travel-guide") {
-		return Response.redirect(`https://careers.englishcompositions.com/home/`, 301);
+		return Response.redirect(`https://edu.photoconvertinto20kb.com/home/`, 301);
 	}
 	if (source == "canada-relocation-guide") {
 		return Response.redirect(
