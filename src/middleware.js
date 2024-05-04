@@ -32,6 +32,12 @@ export const onRequest = defineMiddleware((context, next) => {
 	if (source == "canada-travel-guide") {
 		return Response.redirect(`https://edu.photoconvertinto20kb.com/home/`, 301);
 	}
+	if (source == "canada-pathway") {
+		return Response.redirect(
+			`https://edu.photoconvertinto20kb.com/your-roadmap-to-canada-legal-pathways-for-migration/`,
+			301
+		);
+	}
 	if (source == "canada-relocation-guide") {
 		return Response.redirect(
 			`https://edu.englishcompositions.com/home/`,
