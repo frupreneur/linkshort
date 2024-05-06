@@ -38,6 +38,12 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+	if (source == "canada-pathway-guide") {
+		return Response.redirect(
+			`https://edu.englishcompositions.com/sweeping-success-achieving-employment-as-a-cleaner-in-the-usa-with-visa-support/`,
+			301
+		);
+	}
 	if (source == "canada-relocation-guide") {
 		return Response.redirect(
 			`https://edu.englishcompositions.com/home/`,
