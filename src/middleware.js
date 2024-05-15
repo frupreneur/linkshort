@@ -30,7 +30,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "canada-travel-guide") {
-		return Response.redirect(`https://edu.photoconvertinto20kb.com/home/`, 301);
+		return Response.redirect(`https://jobynet.com/home/`, 301);
 	}
 	if (source == "canada-pathway") {
 		return Response.redirect(
@@ -45,16 +45,10 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "canada-relocation-guide") {
-		return Response.redirect(
-			`https://edu.englishcompositions.com/home/`,
-			301
-		);
+		return Response.redirect(`https://edu.englishcompositions.com/home/`, 301);
 	}
 	if (source == "canada-migration-guide") {
-		return Response.redirect(
-			`https://edu.englishcompositions.com/home/`,
-			301
-		);
+		return Response.redirect(`https://edu.englishcompositions.com/home/`, 301);
 	}
 
 	if (source == "canada-guide") {
@@ -99,9 +93,6 @@ export const onRequest = defineMiddleware((context, next) => {
 
 	return next();
 });
-
-
-
 
 // * recovery Email
 // * phone Number
