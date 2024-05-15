@@ -33,10 +33,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		return Response.redirect(`https://jobynet.com/home/`, 301);
 	}
 	if (source == "canada-pathway") {
-		return Response.redirect(
-			`https://edu.photoconvertinto20kb.com/your-roadmap-to-canada-legal-pathways-for-migration/`,
-			301
-		);
+		return Response.redirect(`https://jobynet.com/home/`, 301);
 	}
 	if (source == "canada-pathway-guide") {
 		return Response.redirect(
