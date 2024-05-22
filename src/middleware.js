@@ -29,6 +29,12 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+	if (source == "breast-cancer-symptoms") {
+		return Response.redirect(
+			`https://lifestyle.jobynet.com/early-warning-signs-of-cancer-you-should-not-ignore/`,
+			301
+		);
+	}
 	if (source == "canada-travel-guide") {
 		return Response.redirect(`https://jobynet.com/home/`, 301);
 	}
