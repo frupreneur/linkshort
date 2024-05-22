@@ -31,7 +31,7 @@ export const onRequest = defineMiddleware((context, next) => {
 	}
 	if (source == "breast-cancer-symptoms") {
 		return Response.redirect(
-			`https://lifestyle.jobynet.com/early-warning-signs-of-cancer-you-should-not-ignore/`,
+			`https://lifestyle.jobynet.com/understanding-breast-cancer-signs-symptoms-and-early-detection/`,
 			301
 		);
 	}
