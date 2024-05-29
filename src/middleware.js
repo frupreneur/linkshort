@@ -30,10 +30,10 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "breast-cancer-symptoms") {
-		return Response.redirect(`https://lifestyle.jobynet.com/homepage`, 301);
+		return Response.redirect(`https://lifestyle.jobynet.com/homepage/`, 301);
 	}
 	if (source == "canada-travel-guide") {
-		return Response.redirect(`https://jobynet.com/home/`, 301);
+		return Response.redirect(`https://jobynet.com/homepage/`, 301);
 	}
 	if (source == "canada-pathway") {
 		return Response.redirect(
