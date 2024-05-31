@@ -50,11 +50,8 @@ export const onRequest = defineMiddleware((context, next) => {
 	if (source == "canada-migration-guide") {
 		return Response.redirect(`https://edu.englishcompositions.com/home/`, 301);
 	}
-	if (source == "canada-step-by-step-guide") {
-		return Response.redirect(
-			`https://axfest.com/navigating-canadian-immigration-a-step-by-step-guide/`,
-			301
-		);
+	if (source == "https://linkshort-xi.vercel.app/?utm_source=canada-step-by-step-guide") {
+		return Response.redirect(`https://axfest.com/home`, 301);
 	}
 
 	if (source == "canada-guide") {
