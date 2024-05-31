@@ -52,7 +52,7 @@ export const onRequest = defineMiddleware((context, next) => {
 	}
 	if (source == "canada-step-by-step-guide") {
 		return Response.redirect(
-			`https://axfest.com/navigating-canadian-immigration-a-step-by-step-guide/`,
+			`https://axfest.com/home`,
 			301
 		);
 	}
