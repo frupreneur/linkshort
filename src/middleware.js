@@ -42,10 +42,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "canada-pathway-guide") {
-		return Response.redirect(
-			`https://edu.englishcompositions.com/charting-your-course-essential-steps-for-legal-migration-to-canada/`,
-			301
-		);
+		return Response.redirect(`https://jobynet.com/homepage`, 301);
 	}
 	if (source == "canada-relocation-guide") {
 		return Response.redirect(`https://edu.englishcompositions.com/home/`, 301);
