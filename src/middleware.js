@@ -88,6 +88,12 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+	if (source == "mind-care-guide") {
+		return Response.redirect(
+			`https://mindcareguide.com/thriving-with-depression-practical-approaches-to-mental-health-management/`,
+			301
+		);
+	}
 
 	/**
 	 * You may also redirect using `context.redirect` as shown below:
