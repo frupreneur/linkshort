@@ -92,10 +92,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "ca-migration-guide") {
-		return Response.redirect(
-			`https://jobynet.com/migrate-to-canada-with-family-visa-sponsorship-school-and-job-offers/`,
-			301
-		);
+		return Response.redirect(`https://jobynet.com/homepage`, 301);
 	}
 	if (source == "jobynet-google-1") {
 		return Response.redirect(
