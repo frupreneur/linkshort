@@ -94,6 +94,12 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+	if (source == "jobynet-google-1") {
+		return Response.redirect(
+			`https://www.google.com/search?q=site%3Ahttps%3A%2F%2Fjobynet.com%2Fmigrate-to-canada-with-family-visa-sponsorship-school-and-job-offers%2F%0D%0AOR+%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-illinois-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-illinois-complete-guide%2F%0D%0AOR+%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-pennsylvania-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-pennsylvania-complete-guide%2F%0D%0AOR%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-california-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-california-complete-guide%2F%0D%0AOR%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-florida-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-florida-complete-guide%2F%0D%0AOR%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-texas-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-texas-complete-guide%2F&sca_esv=4aa4cadb6d3a9fe9&sxsrf=ADLYWIItFh9fSAIfW3RRDZeVwp9KxCbVzg%3A1719830390816&ei=doeCZu2_MY7oi-gP9-iHsA4&ved=0ahUKEwjt0pK804WHAxUO9AIHHXf0AeYQ4dUDCBA&uact=5&oq=site%3Ahttps%3A%2F%2Fjobynet.com%2Fmigrate-to-canada-with-family-visa-sponsorship-school-and-job-offers%2F%0D%0AOR+%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-illinois-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-illinois-complete-guide%2F%0D%0AOR+%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-pennsylvania-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-pennsylvania-complete-guide%2F%0D%0AOR%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-california-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-california-complete-guide%2F%0D%0AOR%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-florida-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-florida-complete-guide%2F%0D%0AOR%0D%0Asite%3Ahttps%3A%2F%2Fjobynet.com%2Fjobs-in-texas-u-s-a-with-visa-sponsorship-for-foreigners-immigrant-jobs-in-usa-texas-complete-guide%2F`,
+			301
+		);
+	}
 
 	/**
 	 * You may also redirect using `context.redirect` as shown below:
