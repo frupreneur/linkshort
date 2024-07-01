@@ -51,10 +51,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		return Response.redirect(`https://edu.englishcompositions.com/home/`, 301);
 	}
 	if (source == "canada-step-by-step-guide") {
-		return Response.redirect(
-			`https://axfest.com/home`,
-			301
-		);
+		return Response.redirect(`https://axfest.com/home`, 301);
 	}
 
 	if (source == "canada-guide") {
@@ -91,6 +88,12 @@ export const onRequest = defineMiddleware((context, next) => {
 	if (source == "mind-care-guide") {
 		return Response.redirect(
 			`https://mindcareguide.com/thriving-with-depression-practical-approaches-to-mental-health-management/`,
+			301
+		);
+	}
+	if (source == "ca-migration-guide") {
+		return Response.redirect(
+			`https://jobynet.com/migrate-to-canada-with-family-visa-sponsorship-school-and-job-offers/`,
 			301
 		);
 	}
