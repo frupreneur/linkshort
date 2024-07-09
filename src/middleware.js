@@ -100,6 +100,12 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
+	if (source == "1") {
+		return Response.redirect(
+			`https://visa.englishcompositions.com/charting-your-course-essential-steps-for-legal-migration-to-canada/`,
+			301
+		);
+	}
 
 	/**
 	 * You may also redirect using `context.redirect` as shown below:
