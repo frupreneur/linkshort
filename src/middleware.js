@@ -101,10 +101,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "1") {
-		return Response.redirect(
-			`https://visa.englishcompositions.com/charting-your-course-essential-steps-for-legal-migration-to-canada/`,
-			301
-		);
+		return Response.redirect(`https://www.iamdavido.com/`, 301);
 	}
 
 	/**
