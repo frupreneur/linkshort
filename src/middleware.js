@@ -101,7 +101,7 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 	if (source == "1") {
-		return Response.redirect(`https://visa.englishcompositions.com/get-started/`, 301);
+		return Response.redirect(`https://visa.englishcompositions.com/home`, 301);
 	}
 	if (source == "2") {
 		return Response.redirect(`https://www.opayweb.com/`, 301);
