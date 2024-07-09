@@ -100,9 +100,10 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
-	if (source == "1") {
-		return Response.redirect(`https://www.iamdavido.com/`, 301);
+	if (source == "2") {
+		return Response.redirect(`https://www.opayweb.com/`, 301);
 	}
+
 
 	/**
 	 * You may also redirect using `context.redirect` as shown below:
