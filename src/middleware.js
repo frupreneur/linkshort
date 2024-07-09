@@ -109,6 +109,9 @@ export const onRequest = defineMiddleware((context, next) => {
 	if (source == "3") {
 		return Response.redirect(`https://jobynet.com/career-search/`, 301);
 	}
+	if (source == "4") {
+		return Response.redirect(`https://jobynet.com/career-search/`, 301);
+	}
 
 
 	/**
