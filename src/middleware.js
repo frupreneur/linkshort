@@ -119,6 +119,14 @@ export const onRequest = defineMiddleware((context, next) => {
 		);
 	}
 
+	// ahachat
+	if (source == "aha-1") {
+		return Response.redirect(
+			`https://visa.englishcompositions.com/home`,
+			301
+		);
+	}
+
 
 	/**
 	 * You may also redirect using `context.redirect` as shown below:
