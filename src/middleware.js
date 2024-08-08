@@ -126,7 +126,7 @@ export const onRequest = defineMiddleware((context, next) => {
 			301
 		);
 	}
-	if (source == "jobyNet-1") {
+	if (source == "jobynet-1") {
 		return Response.redirect(
 			`https://jobynet.com/travel`,
 			301
